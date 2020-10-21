@@ -58,5 +58,4 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // so that it can be shown in the ListView
         return listItemView;
     }
-
 }
