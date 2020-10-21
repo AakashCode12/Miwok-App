@@ -11,13 +11,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import androidx.core.content.ContextCompat;
+
 import java.util.ArrayList;
 
 
 public class WordAdapter extends ArrayAdapter<Word> {
+    private int mColorResourceId;
 
-    public WordAdapter(Activity context, ArrayList<Word> words) {
+    public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);
+        mColorResourceId = colorResourceId;
     }
 
     @Override
@@ -46,13 +50,17 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
-        if (currentAndroidFlavor.hasImage()){
+        if (currentAndroidFlavor.hasImage()) {
             iconView.setImageResource(currentAndroidFlavor.getImageResourceId());
             iconView.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             iconView.setVisibility(View.GONE);
         }
 
+
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        textContainer.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
