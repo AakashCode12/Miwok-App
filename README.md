@@ -8,5 +8,6 @@ The Miwok App is an Android Application made while learning Android Development.
 * Recycler view is used.
 * MediaPlayer Class is Used.
 * Multiple Activity is Used.
+* onClickListeners are Used.
 
 ## ScreenShots
