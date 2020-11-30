@@ -11,3 +11,6 @@ The Miwok App is an Android Application made while learning Android Development.
 * onClickListeners are Used.
 
 ## ScreenShots
+
+![](https://res.cloudinary.com/dnv3ztqf1/image/upload/v1606710393/Miwok%20App%20Readme/Untitled_cvsrmi.png)
+![](https://res.cloudinary.com/dnv3ztqf1/image/upload/v1606710528/Miwok%20App%20Readme/Untitled_zqmiga.png)
