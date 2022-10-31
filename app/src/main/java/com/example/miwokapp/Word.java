@@ -10,10 +10,10 @@ public class Word {
         mDefaultTranslation = DefaultTranslation;
         mMiwokTranslation = MiwokTranslation;
     }
-    public Word(String DefaultTranslation, String MiwokTranslation,int ImageResourceId) {
+    public Word(String DefaultTranslation, String MiwokTranslation,int ImageResourceId1) {
         mDefaultTranslation = DefaultTranslation;
         mMiwokTranslation = MiwokTranslation;
-        mImageResourceId=ImageResourceId;
+        mImageResourceId=ImageResourceId1;
     }
 
     public String getDefaultTranslation() {
